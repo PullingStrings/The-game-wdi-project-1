@@ -19,12 +19,29 @@ main {
 
 }
 
+
+
+.wholegame{
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom{
+  background-color: lightblue;
+  overflow: visible;
+  z-index: 0;
+}
+
+.Top{
+  padding:50px 100px;
+  background-color: lightblue;
+}
+
 .gameSpace{
   width: 100%;
-  height: 700px;
-  background-color: #eee;
+  height: 481px;
     border: 1px dotted black;
-    overflow:hidden;
+
 }
 
 .startBtn{
@@ -36,8 +53,8 @@ main {
 }
 
 .grid{
-  background-color: lightblue;
-  height: 800px;
+  // background-color: lightblue;
+  height: 100px;
   display: inline-block;
   width: 14%;
   // border: 2px solid grey;
@@ -48,43 +65,48 @@ main {
 
 
 .ballon1 {
-  padding: 2px 0px 2px 4px;
   background: #f00;
   width: 90px;
   height: 90px;
   border-radius: 50%;
-  position:absolute;bottom: 0px;
+  position: absolute;
+  // z-index: -1;
+
 }
 
-.ballon2 {
+.ballonG2 {
   background: green;
   width: 90px;
   height: 90px;
   border-radius: 50%;
-    position:absolute;bottom: 0px;
+    position:absolute;
+    // z-index: -1;
 }
 
-.ballon3 {
+.ballonG3 {
   background: green;
   width: 90px;
   height: 90px;
   border-radius: 50%;
-    position:absolute;bottom: 0px;
+    position:absolute;
+    // z-index: -1;
 }
 //
-.ballon4 {
+.ballonG4 {
   background: green;
   width: 90px;
   height: 90px;
   border-radius: 50%;
-    position:absolute;bottom: 0px;
+    position:absolute;
+    // z-index: -1;
 }
-.ballon5 {
+.ballonG5 {
   background: green;
   width: 90px;
   height: 90px;
   border-radius: 50%;
-  position: absolute;bottom:0px;
+  position: absolute;
+  // z-index: -1;
 }
 //
 // .ballon6 {
