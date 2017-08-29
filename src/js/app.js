@@ -4,58 +4,52 @@ $(() => {
   const $startBtn = $('.startBtn');
   const $resetBtn = $('.resetBtn');
   const $result = $('.result');
-  // const ballonWins = [$ballonG2, $ballonG3, $ballonG4, $ballonG5];
-  // build click function to press button
+  const $points = $('.points');
+  let score = 0;
+
+
+  // when you click on the start button it will start game
   $startBtn.on('click',() =>{
-    // if player clicks on the start btn, he or she will activiate ballons
+    greenCount = 0;
     $ballons.each((i, ballon) => {
       $(ballon).animate(({top: '-20%'}), Math.floor(Math.random() * 6000) + 6000);
     });
   });
-  // on click of the green ballon then $(e.target).css({top: '100%'});
+  // the win and lose function with the score
   $ballons.on('click', (e) => {
     if($(e.target).hasClass('red')) {
-      if(greenCount < 4) $result.text('You lose');
-      else $result.text('You Win');
+      if(greenCount === 4) {
+        $result.text('You Win');
+        score++;
+      } else {
+        $result.text('You Lose');
+        score--;
+        $ballons.stop();
+        $ballons.css({top: '100%'});
+      }
+      $points.text(score);
+      $ballons.stop().css({top: '100%'});
     }
     if($(e.target).hasClass('green')) greenCount++;
     $(e.target).stop();
     $(e.target).css({top: '100%'});
   });
 
-  // if result is a win, give point and start game
-
-    if($result === 'You Win'){
-      
-    }
-
+  // this button will reset the game
+  $resetBtn.on('click',() =>{
+    $resetBtn.html('Reset');
+    $result.text('');
+    $points.text('');
+    $ballons.stop().css({top: '100%'});
+    score.text('0');
   });
 
-
-
-  // $green.on('click',() =>{
-  //   if($green === true){
-  //     return $ballon1.stop();
-  //     $ballon1.css(({top: '100%'}),0);
+  // if red reaches -20% send ballon back to top 100%
+  // const $startOver = $ballons.animate({top: '-20%'});
+  // $startOver.on('animationend', (e) =>{
+  //   if($(e.target).hasClass('red')){
+  //     $ballons.stop().css({top: '100%'});
   //   }
-  // })
-  // create a click to pop the ballons
-  // if any of the ballons in the ballonWins array are click they should return to the bottom of the page
-
-
-
-
-
-  // $ballon2.on('click', () =>{
-  //   // have a lose ballon, and make it disapper when clicked
-  //   // this is when a player will lose
-  //   $ballon2.hide(1000);
   // });
-
-
-
-
-
-
 
 }); // end of DOMContentLoaded
