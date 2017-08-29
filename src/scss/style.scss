@@ -7,16 +7,13 @@ body {
 }
 
 main {
-  // background-color: lightblue;
-  // width: 100%;
-  // height: 800px;
-  // border:1px solid grey;
-  // display: inline-block;
-  // width: 20%;
-  // // border: 2px solid grey;
-  // margin: 5px 5px;
-  // padding: 0px 0px 0px 50px;
-
+  display: flex;
+  width: auto;
+  height: auto;
+  margin: 1px;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
 }
 
 
@@ -26,88 +23,71 @@ main {
   flex-direction: column;
 }
 
-.bottom{
-  background-color: lightblue;
-  overflow: visible;
-  z-index: 0;
-}
-
-.Top{
-  padding:50px 100px;
-  background-color: lightblue;
-}
-
 .gameSpace{
   width: 100%;
-  height: 481px;
-    border: 1px dotted black;
-
+  height: 480px;
+  border: 1px dotted black;
+  ul {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    li {
+      min-width: 90px;
+      height: 100%;
+      background-color: lightgrey;
+      position: relative;
+      overflow: hidden;
+    }
+  }
 }
 
 .startBtn{
-  display: inline-block;
-  width: auto;
-  height: auto;
+border: 2px solid green;
+padding-right: 150px;
+margin: 1px;
+}
+
+.resetBtn{
+border: 2px solid red;
+padding: 20px;
+margin: 1px;
+align-self: flex-start;
+
+}
+.result{
+border: 2px solid black;
+padding-right: 200px;
+margin: 1px
+}
+.points{
   border: 2px solid grey;
-  margin: 1px;
+  padding: 20px;
+  margin: 1px
 }
 
-.grid{
-  // background-color: lightblue;
-  height: 100px;
-  display: inline-block;
-  width: 14%;
-  // border: 2px solid grey;
-  margin: 5px 5px;
-  padding: 0px 40px 0px 40px;
-
+.ballon {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  position:absolute;
+  top: 100%;
 }
 
 
-.ballon1 {
+.red {
   background: #f00;
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  position: absolute;
-  // z-index: -1;
 
 }
 
-.ballonG2 {
+.green {
   background: green;
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-    position:absolute;
-    // z-index: -1;
 }
 
-.ballonG3 {
-  background: green;
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-    position:absolute;
-    // z-index: -1;
-}
-//
-.ballonG4 {
-  background: green;
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-    position:absolute;
-    // z-index: -1;
-}
-.ballonG5 {
-  background: green;
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  position: absolute;
-  // z-index: -1;
-}
+
+
 //
 // .ballon6 {
 //   background: green;

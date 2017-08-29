@@ -1,34 +1,46 @@
 $(() => {
-  const $ballon1 = $('.ballon1');
-  const $ballon2 = $('.ballonG2');
-  const $ballon3 = $('.ballonG3');
-  const $ballon4 = $('.ballonG4');
-  const $ballon5 = $('.ballonG5');
-  // const $grid = $('.grid');
+  const $ballons = $('.ballon');
+  let greenCount = 0;
   const $startBtn = $('.startBtn');
-  const $popBallon = $('ballon');
-  const ballonWins = [];
+  const $resetBtn = $('.resetBtn');
+  const $result = $('.result');
+  // const ballonWins = [$ballonG2, $ballonG3, $ballonG4, $ballonG5];
   // build click function to press button
   $startBtn.on('click',() =>{
     // if player clicks on the start btn, he or she will activiate ballons
-    $ballon1.animate(({bottom: '+=585px'}),10000);
-    $ballon2.animate(({bottom: '+=585px'}),50000);
-    $ballon3.animate(({bottom: '+=585px'}),20000);
-    $ballon4.animate(({bottom: '+=585px'}),1000);
-    $ballon5.animate(({bottom: '+=585px'}),40000);
+    $ballons.each((i, ballon) => {
+      $(ballon).animate(({top: '-20%'}), Math.floor(Math.random() * 6000) + 6000);
+    });
+  });
+  // on click of the green ballon then $(e.target).css({top: '100%'});
+  $ballons.on('click', (e) => {
+    if($(e.target).hasClass('red')) {
+      if(greenCount < 4) $result.text('You lose');
+      else $result.text('You Win');
+    }
+    if($(e.target).hasClass('green')) greenCount++;
+    $(e.target).stop();
+    $(e.target).css({top: '100%'});
   });
 
-  // create a click to pop the ballons
+  // if result is a win, give point and start game
 
-  $popBallon.on('click',(e) =>{
-    // if any of the ballons in the ballonWins array are click they should return to the bottom of the page
-    if ($ballon2 === e.target){
-      return $ballon2.remove();
-    }else{
-      $startBtn;
+    if($result === 'You Win'){
+      
     }
 
   });
+
+
+
+  // $green.on('click',() =>{
+  //   if($green === true){
+  //     return $ballon1.stop();
+  //     $ballon1.css(({top: '100%'}),0);
+  //   }
+  // })
+  // create a click to pop the ballons
+  // if any of the ballons in the ballonWins array are click they should return to the bottom of the page
 
 
 
