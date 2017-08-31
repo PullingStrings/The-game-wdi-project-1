@@ -16,17 +16,51 @@ main {
   flex-direction: row;
   justify-content: space-between;
   text-align: center;
-  background-image: url('../images/background_sky.png');
-  background-size: contain;
+  background-color: black;
+  border-radius: 5px;
+  background: #d93434;
+  background-image: -webkit-linear-gradient(top, #e6c9ef, #010020)
+  // background-image: url('../images/background_sky.png');
+  // background-size: contain;
 }
-
 
 h1{
   text-align: center;
+  font-size: 45px;
+  background-color: rgba(36, 169, 209, 0.36);
+
 }
 
 p{
   text-align: center;
+  font-size: 30px;
+
+}
+
+span{
+
+}
+
+.word1{
+  color:#d93434;
+}
+
+.word2{
+  color: #318c21;
+}
+
+.word3{
+  color:#d93434
+}
+
+.pop{
+  font-size: 50px;
+  color: #318c21;
+}
+
+.balloon{
+  font-size: 50px;
+  color: #d93434;
 }
 
 
@@ -38,8 +72,9 @@ p{
 .gameSpace{
   width: 100%;
   height: 480px;
-  background-image: url('../images/background_sky.png');
-  background-size: contain;
+  background-image: url('../images/carnival.gif');
+  background-size: cover;
+  border-radius: 5px;
   // border: 1px dotted black;
   ul {
     height: 100%;
@@ -57,13 +92,41 @@ p{
   }
 }
 
+.playAgainBtn{
+  border: 2px solid white;
+  background-color: #318c21;
+  padding: 20px;
+  margin: 1px;
+  border-radius: 5px;
+  text-align: center;
+  background: #d93434;
+  background-image: -webkit-linear-gradient(top, #318c21, #d93434);
+  color: rgb(253, 237, 0);
+}
+.playAgainBtn:hover{
+  cursor:pointer;
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+  transform: scale(1.1);
+}
+
 .startBtn{
-border: 2px solid white;
-background-color: green;
-padding: 20px;
-margin: 1px;
-border-radius: 5px;
-text-align: center;
+  border: 2px solid white;
+  background-color: #318c21;
+  padding: 20px;
+  margin: 1px;
+  border-radius: 5px;
+  text-align: center;
+  background: #d93434;
+  background-image: -webkit-linear-gradient(top, #318c21, #d93434);
+  color: rgb(253, 237, 0);
+  border: dotted #e7f443 6px;
 }
 
 .startBtn:hover{
@@ -80,31 +143,37 @@ text-align: center;
 }
 
 .resetBtn{
-border: 2px solid white;
-background-color: red;
-padding: 20px;
-margin: 1px;
-align-self: flex-start;
-border-radius: 5px;
+  border: 2px solid white;
+  background-color: red;
+  padding: 20px;
+  margin: 1px;
+  align-self: flex-start;
+  border-radius: 10px;
+  background: #d93434;
+  background-image: -webkit-linear-gradient(top, #e7f443, #d93434);
+  color: rgb(253, 0, 0);
 }
 .resetBtn:hover {
-    display: inline-block;
-    vertical-align: middle;
-    transform: translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    backface-visibility: hidden;
-    -moz-osx-font-smoothing: grayscale;
-    transition-duration: 0.3s;
-    transition-property: transform;
-    transform: scale(1.1);
-    cursor:pointer;
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+  transform: scale(1.1);
+  cursor:pointer;
 }
 .result{
-border: 2px solid white;
-background-color: #b2adad;
-padding: 20px;
-margin: 1px;
-border-radius: 5px;
+  border: 2px solid white;
+  background-color: #b2adad;
+  padding: 20px;
+  margin: 1px;
+  border-radius: 5px;
+  background: rgb(217, 52, 52);
+  background-image: -webkit-linear-gradient(top, #ecefc9, #e1b1b1);
+  color: rgb(255, 255, 255);
 }
 
 .points{
@@ -113,6 +182,9 @@ border-radius: 5px;
   padding: 20px;
   margin: 1px;
   border-radius: 5px;
+  background: rgb(217, 52, 52);
+  background-image: -webkit-linear-gradient(top, #ecefc9, #e1b1b1);
+  color: rgb(255, 255, 255);
 }
 
 .ballon {
@@ -126,49 +198,100 @@ border-radius: 5px;
 
 
 .red {
-  background: #a01b1b;
-
+  background-color:#c72200;
 }
 
 .green {
-  background: #86efba;
+  background: #318c21;
 }
 
 footer{
   height: 100px;
   width: auto;
   border: 2px, solid, black;
-  background-image: url('../images/ground.png');
-  background-size: contain;
+  background-color: black;
+  border-radius: 5px;
+  background: #d93434;
+  background-image: -webkit-linear-gradient(top, #e6c9ef, #010020)
+  // background-image: url('../images/carnival.gif');
+  // background-size: cover;
+}
+//
+// /* Tablet Landscape */
+// @media screen and (max-width: 1060px) {
+//     #primary { width:67%; }
+//     #secondary { width:30%; margin-left:3%;}
+// }
+// /* Tabled Portrait */
+// @media screen and (max-width: 768px) {
+//     #primary { width:100%; }
+//     #secondary { width:100%; margin:0; border:none; }
+// }
+
+@media only screen and (max-width: 960px){
+
+
+  .gameSpace{
+    background-image: url('../images/carnival.gif');
+    background-size: cover;
+
+  }
+
+
 }
 
 
+@media only screen and (max-width: 540px) {
 
-//
-// .ballon6 {
-//   background: green;
-//   width: 250px;
-//   height: 250px;
-//   border-radius: 50%;
-// }
-//
-// .ballon7 {
-//   background: green;
-//   width: 200px;
-//   height: 200px;
-//   border-radius: 50%;
-// }
-//
-// .ballon8 {
-//   background: green;
-//   width: 100px;
-//   height: 100px;
-//   border-radius: 50%;
-// }
-//
-// .ballon9 {
-//   background: green;
-//   width: 40px;
-//   height: 40px;
-//   border-radius: 50%;
-// }
+
+  .gameSpace{
+    background-image: url('../images/carnival.gif');
+    background-size: cover;
+
+  }
+  .startBtn{
+    width: 520px;
+    height: 82px;
+  }
+
+  main{
+    display: inherit;
+    background: none;
+    background-color: none;
+    background-image: none;
+  }
+
+  div{
+    display: grid;
+  }
+
+  .results{
+    height: 120px;
+    width: 120px;
+  }
+
+}
+
+@media only screen and (max-width: 320px){
+
+  .startBtn{
+    width: 303px;
+    height: 82px;
+  }
+
+  .gameSpace{
+    background-image: url('../images/carnival.gif');
+    background-size: cover;
+    width: 304px;
+
+  }
+
+  main{
+    display: inherit;
+    background: none;
+    background-color: none;
+    background-image: none;
+  }
+
+
+}

@@ -6,8 +6,11 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaijaan" rel="stylesheet">
   <link rel="stylesheet"
- href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
- <link href="css/hover-min.css" rel="stylesheet">
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link href="css/hover-min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
   <!-- inject:js -->
   <!-- endinject -->
   <!-- inject:css -->
@@ -15,23 +18,30 @@
 </head>
 <body>
   <header>
-    <nav><h1>Pop the Ballon</h1></nav>
-      <p>Pop all the green balloons befor you pop the red one to win...go on try it</p>
+    <h1>
+      <div class="pop animated pulse">Pop</div>
+      the<div class="balloon animated bounce">Balloon</div>
+    </h1>
+    <p>
+      <span class= "word1">Pop</span>
+      all the <span class= "word2">green</span>
+      balloons
+      before you pop the<span class= "word3"> red</span> one to win...go on try it
+    </p>
     <main>
-      <div class="startBtn">Start
-      </div>
-      <div class="resetBtn">Reset
-      </div>
-      <div class="result">
-      </div>
-      <div class="points">0
-      </div>
+      <div class="startBtn">Start</div>
+      <div class="playAgainBtn">Play Again?</div>
+      <div class="resetBtn">Reset</div>
+      <div class="result">Will you Win or will you Lose</div>
+      <div class="points">You have Zero points so far</div>
     </main>
     <audio></audio>
     <div class="wholeGame">
       <div class="gameSpace">
         <ul>
           <li><div class="red ballon"></div></li>
+          <li><div class="green ballon"></div></li>
+          <li><div class="green ballon"></div></li>
           <li><div class="green ballon"></div></li>
           <li><div class="green ballon"></div></li>
           <li><div class="green ballon"></div></li>
