@@ -27,7 +27,7 @@ The game is set at a night carnival, where you can pop some balloons for fun.
 
 ### How to play- 
 When screen loads, instructions will be at the top.
-**put picture here**
+![](public/assets/ScreenShot 1.png)
 
 There will be a start button...click it to start game
 **put picutre here**
@@ -55,7 +55,7 @@ The main challages I faced when creating the game were the triggers to set the b
 I also found it different to create game space as to where you would pop the balloons and getting them to disapper, or rather pop.
 Styling was also a concern for me...getting the right tone and feel for the game
 **put picture here**
-![](public/assets/screenshot-5.png)
+
 
 
 ### Improvements
