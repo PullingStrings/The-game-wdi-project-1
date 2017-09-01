@@ -3,7 +3,7 @@ My game
 
 
 #Pop the Balloons
-#Simple exciting game where you get to pop some balloons on your way home
+###Simple exciting game where you get to pop some balloons on your way home
 
 
 
