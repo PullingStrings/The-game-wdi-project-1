@@ -1,12 +1,8 @@
-# The-game-wdi-project-1
-My game 
+# Pop the Balloons
 
+### Simple exciting game where you get to pop some balloons on your way home
 
-#Pop the Balloons
-###Simple exciting game where you get to pop some balloons on your way home
-
-
-
+![screenshot 1](https://user-images.githubusercontent.com/27218761/29963647-80d80c96-8eff-11e7-9142-0a9bb85573b2.png)
 
 
 ### installation and setup
