@@ -4,10 +4,10 @@ $(() => {
   const $resetBtn = $('.resetBtn');
   const $result = $('.result');
   const $points = $('.points');
-  const popBallon = new Audio('audio/blop.wav');
-  const backgroundMusic = new Audio('audio/backgroundMusic.mp3');
-  const winAudio = new Audio('audio/win.mp3');
-  const loseAudio = new Audio('audio/lose.mp3');
+  const popBallon = new Audio('/public/audio/blop.wav');
+  const backgroundMusic = new Audio('/public/audio/backgroundMusic.mp3');
+  const winAudio = new Audio('/public/audio/win.mp3');
+  const loseAudio = new Audio('/public/audio/lose.mp3');
   let score = 0;
   let greenCount = 0;
 
@@ -18,6 +18,10 @@ $(() => {
       $(ballon).animate(({top: '-20%'}), Math.floor(Math.random() * 7000) + 7000);
       $(ballon).animate({top: '100%'}, 0);
       backgroundMusic.play();
+      //
+      // if ($ballons.hasClass('red') === $(ballon).animate(({top: '-20%'}))){
+      //   return $ballons;
+      // }
     });
   });
 
