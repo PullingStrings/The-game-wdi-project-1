@@ -3,7 +3,7 @@ My game
 
 
 #Pop the Balloons
-##Simple exciting game where you get to pop some balloons on your way hom
+#Simple exciting game where you get to pop some balloons on your way home
 
 
 
@@ -27,15 +27,13 @@ The game is set at a night carnival, where you can pop some balloons for fun.
 
 ### How to play- 
 When screen loads, instructions will be at the top.
-![](public/assets/ScreenShot 1.png)
 
 There will be a start button...click it to start game
-**put picutre here**
+
 
 Once the balloons start appering at the bottom of the screen, try and pop all the green balloons before you pop the red one to win,
 else if you pop the red one on the go you will lose
 
-**put picture here***
 
 ### Technologies Used 
 
@@ -54,7 +52,6 @@ Software languages used-
 The main challages I faced when creating the game were the triggers to set the balloons up.
 I also found it different to create game space as to where you would pop the balloons and getting them to disapper, or rather pop.
 Styling was also a concern for me...getting the right tone and feel for the game
-**put picture here**
 
 
 
